@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Page</title>
+</head>
+<body>
+    <div style="width:500px; height:300px; border:2px solid red; border-radius:20px; padding: 10px; margin: 10px;" id="div1" name="div1">
+
+    </div>
+    <button type="button" name="button1" id="button1" onclick="dataDecision()">Press Me</button>
+    <script src="page1.js"></script>
+    <script src="page2.js"></script>
+    <script>
+        var decide = false;
+        dataDecision = () => {
+            if(decide === false){
+                decide = true;
+                page1data();
+            } else {
+                decide = false;
+                page2data();
+            }
+        }
+    </script>
+</body>
+</html>
